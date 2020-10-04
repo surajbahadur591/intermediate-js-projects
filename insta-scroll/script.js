@@ -28,6 +28,10 @@ function displayPhotos(){
     const item = document.createElement('a');
     item.setAttribute('href', photo.links.html);
     // item.setAttribute('target', '_blank');
+
+    const head = document.createElement('h3');
+    
+
     
 
     const img = document.createElement('img');
@@ -37,8 +41,21 @@ function displayPhotos(){
 
     img.addEventListener('load', imageLoaded);
 
+    var t = document.createTextNode(photo.alt_description) || "Beautiful";
+
+    head.appendChild(t);
+    imageContainer.appendChild(head);
+    // console.log(t);
+    var p = document.createElement('p');
+    p.innerHTML = "Likes : " + photo.likes ;
+    imageContainer.appendChild(p);
+
     item.appendChild(img);
     imageContainer.appendChild(item);
+
+   
+
+    // console.log(photo.likes);
 
     });
 
