@@ -1,4 +1,4 @@
-const count = 30;
+const count = 15;
 const apiKEY = "_ZqEyBWHDatSK0_8ktDmsJ31U_sK7A5wDutSCWI5Z3A";
 
 const imageContainer = document.getElementById('image-container');
