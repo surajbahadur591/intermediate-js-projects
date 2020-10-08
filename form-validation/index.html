@@ -13,37 +13,38 @@
     <!-- get logos/icon from fontawesome  -->
     <div class="container">
         <h1>Sign Up Today!!</h1>
-        <form id="form">
+        <form id="form" >
             <div class="form-group">
                 <!-- <label for="name">Full Name</label> -->
-                <input type="text" id="name" placeholder="Full Name">
+                <input minlength="3" maxlength="100" required type="text" id="name" placeholder="Full Name">
            </div>
            <div class="form-group">
             <!-- <label for="phone">Phone Number</label> -->
-            <input type="tel" id="phone" placeholder="555-555-5555">
+            <input pattern="[0-9]{10}" required type="tel" id="phone" placeholder="+91">
        </div>
 
        <div class="form-group">
         <!-- <label for="email">Email Address</label> -->
-        <input type="email" id="email" placeholder="Email Address">
+        <input required type="email" id="email" placeholder="Email Address">
         </div>
 
 
         <div class="form-group">
             <!-- <label for="website">website</label> -->
-            <input type="url" id="website" placeholder="website">
+            <input required type="url" id="website" placeholder="Website Link">
        </div>
 
 
        <div class="form-group">
         <!-- <label for="password1">Create Password</label> -->
-        <input type="password" id="password1" placeholder="Create Password">
+        <input pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&]).{8,32}$" required type="password" id="password1" placeholder="Create Password (Min. 8 Characters)"
+        title="include atleast 1 Uppercase, atleast 1 lowercase, atleast one number and a special character ">
    </div>
 
 
    <div class="form-group">
     <!-- <label for="password2">Confirm Password</label> -->
-    <input type="password" id="password2" placeholder="Confirm Password">
+    <input attern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&]).{8,32}$" required type="password" id="password2" placeholder="Confirm Password">
 </div>
 
 <button type="submit">Register</button>
