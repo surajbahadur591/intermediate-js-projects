@@ -22,7 +22,7 @@ async function getQuote(){
         const data = await respose.json();
         // console.log(data);
         // console.log(data.quoteText);
-        // console.log(data.quoteAuthor);
+        // console.log(data.quoteAuthor);git
         console.log(data.quoteText);
         quotecontent.innerText = data.quoteText;
 
